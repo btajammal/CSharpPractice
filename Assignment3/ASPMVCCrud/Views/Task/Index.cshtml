@@ -1,0 +1,32 @@
+﻿@model IEnumerable<ASPMVCCrud.Models.Task>
+
+@{
+    ViewBag.Title = "Task Details";
+}
+
+<div class="col-4">
+    @using (@Html.BeginForm("Search", "Task", FormMethod.Get))
+    {
+        <input id="search" class="col-8 form-control" name="searchTitle" placeholder="Search By Title" style="display:inline-block;" />
+        <input type="submit" class="col-3 form-control btn btn-outline-secondary" style="display:inline-block;vertical-align:top;min-width:fit-content" value="search" />
+    }
+</div>
+<div class="card-deck">
+    @foreach (var task in Model)
+    {
+        <div class="card m-3">
+            <div class="card-header">
+                <h3> @task.Name</h3>
+            </div>
+            <img class="card-img-top" src="~/images/task.png" />
+            <div class="card-footer text-center">
+                <a asp-controller="task" asp-action="details" asp-route-id="@task.Id"
+                   class="btn btn-primary m-1">View</a>
+                <a asp-controller="task" asp-action="Edit" asp-route-id="@task.Id"
+                   class="btn btn-primary m-1">Edit</a>
+                <a asp-controller="task" asp-action="Delete" asp-route-id="@task.Id"
+                   class="btn btn-primary m-1">Delete</a>
+            </div>
+        </div>
+    }
+</div>

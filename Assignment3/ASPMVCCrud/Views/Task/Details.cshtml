@@ -1,0 +1,29 @@
+﻿@model ASPMVCCrud.Models.Task
+
+@{
+    ViewBag.Title = "Task Details";
+}
+
+
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header">
+                <h1>@Model.Name</h1>
+            </div>
+            <div class="card-body text-center">
+                <h4>Task ID : @Model.Id</h4>
+                <h4>Task Title : @Model.Name</h4>
+                <h4>Task Status : @Model.Status  </h4>
+                <h4>Task Priority : @Model.Priority </h4>
+            </div>
+            <div class="card-footer text-center">
+                <a asp-controller="task" asp-action="index" 
+                   class="btn btn-primary">Back</a>
+                <a asp-controller="task" asp-action="Edit" asp-route-id=" @Model.Id"
+                   class="btn btn-primary m-1">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
