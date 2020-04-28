@@ -34,11 +34,13 @@ namespace ASPMVCCrud
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseExceptionHandler("/Task/ErrorPage");
+                app.UseStatusCodePagesWithReExecute("/Task/ErrorPage/1");
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseExceptionHandler("/Task/ErrorPage");
+                app.UseStatusCodePagesWithReExecute("/Task/ErrorPage/1");
                 app.UseHsts();
             }
             app.UseHttpsRedirection();

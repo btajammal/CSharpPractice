@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 using ASPMVCCrud.Models;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Task = ASPMVCCrud.Models.Task;
@@ -82,13 +83,17 @@ namespace ASPMVCCrud.Controllers
             Models.Task task = taskRepository.SearchTask(searchTitle);
             if(task is null)
             {
-                ViewData["msg"] = "No Result";
+                TempData["ErrorMsg"]= "No Result Found";
                 return RedirectToAction("Index");
             }
             else
             {
             return RedirectToAction("details", new { id = task.Id });
             }
+        }
+        public ViewResult ErrorPage(int? errorCode)
+        {
+            return View();
         }
 
     }

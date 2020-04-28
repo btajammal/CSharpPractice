@@ -98,8 +98,6 @@ C:\Users\bushra.tajammal\source\repos\ASPMVCCrud\bin\Debug\netcoreapp3.1\ru\Micr
 C:\Users\bushra.tajammal\source\repos\ASPMVCCrud\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\bushra.tajammal\source\repos\ASPMVCCrud\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\bushra.tajammal\source\repos\ASPMVCCrud\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\bushra.tajammal\source\repos\ASPMVCCrud\obj\Debug\netcoreapp3.1\ASPMVCCrud.csproj.CoreCompileInputs.cache
-C:\Users\bushra.tajammal\source\repos\ASPMVCCrud\obj\Debug\netcoreapp3.1\ASPMVCCrud.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\bushra.tajammal\source\repos\ASPMVCCrud\obj\Debug\netcoreapp3.1\ASPMVCCrud.RazorAssemblyInfo.cache
 C:\Users\bushra.tajammal\source\repos\ASPMVCCrud\obj\Debug\netcoreapp3.1\ASPMVCCrud.RazorAssemblyInfo.cs
 C:\Users\bushra.tajammal\source\repos\ASPMVCCrud\obj\Debug\netcoreapp3.1\ASPMVCCrud.AssemblyInfoInputs.cache
@@ -127,3 +125,6 @@ C:\Users\bushra.tajammal\source\repos\ASPMVCCrud\obj\Debug\netcoreapp3.1\ASPMVCC
 C:\Users\bushra.tajammal\source\repos\ASPMVCCrud\obj\Debug\netcoreapp3.1\ASPMVCCrud.csprojAssemblyReference.cache
 C:\Users\bushra.tajammal\source\repos\ASPMVCCrud\obj\Debug\netcoreapp3.1\Razor\Views\Task\Create.cshtml.g.cs
 C:\Users\bushra.tajammal\source\repos\ASPMVCCrud\obj\Debug\netcoreapp3.1\Razor\Views\Task\Edit.cshtml.g.cs
+C:\Users\bushra.tajammal\source\repos\ASPMVCCrud\obj\Debug\netcoreapp3.1\ASPMVCCrud.csproj.CoreCompileInputs.cache
+C:\Users\bushra.tajammal\source\repos\ASPMVCCrud\obj\Debug\netcoreapp3.1\ASPMVCCrud.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bushra.tajammal\source\repos\ASPMVCCrud\obj\Debug\netcoreapp3.1\Razor\Views\Task\ErrorPage.cshtml.g.cs

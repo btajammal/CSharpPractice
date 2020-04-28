@@ -18,11 +18,12 @@
                 <h4>Task Priority : @Model.Priority </h4>
             </div>
             <div class="card-footer text-center">
-                <a asp-controller="task" asp-action="index" 
+                <a asp-controller="task" asp-action="index"
                    class="btn btn-primary">Back</a>
                 <a asp-controller="task" asp-action="Edit" asp-route-id=" @Model.Id"
                    class="btn btn-primary m-1">Edit</a>
-                <a href="#" class="btn btn-danger">Delete</a>
+                <a asp-controller="task" asp-action="Delete" asp-route-id="@Model.Id"
+                   class="btn btn-primary m-1">Delete</a>
             </div>
         </div>
     </div>
