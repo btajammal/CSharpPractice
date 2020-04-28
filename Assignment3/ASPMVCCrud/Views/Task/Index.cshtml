@@ -4,11 +4,17 @@
     ViewBag.Title = "Task Details";
 }
 
+<h3 class="text-danger">@TempData["ErrorMsg"]</h3>
+<div >
+    @using (@Html.BeginForm("Search", "Task", FormMethod.Get))
+    {
+        <input id="search" class="col-8 form-control" name="searchTitle" placeholder="Search By Title" style="display:inline-block;" />
+        <input type="submit" class="col-3 form-control btn btn-outline-secondary" style="display:inline-block;vertical-align:top;min-width:fit-content" value="search" />
+    }
+</div>
 <script src="~/Scripts/jquery-2.1.3.min.js"></script>
 <script src="~/Scripts/bootstrap.min.js"></script>
 
-
-<input type="button" id="btnaddperson" class="btn btn-small btn-primary" value="Create Task" />
 <hr />
 <div class="col-12 border p-3" style="max-height:400px;overflow: auto">
     <table class="table table-striped table-bordered table-hover" style="width:100%">
@@ -50,5 +56,5 @@
             }
         </tbody>
     </table>
-    </div>
+</div>
 
